@@ -7,21 +7,46 @@
   width: 300px;
   height: 100vh;
   background-color: #253141;
-
 }
+
 .side-header{
   height: 100px;
-}
-
-.rooms {
-  height: calc(100vh - 100px);
-  background-color: #2f3e51;
-}
-
-.side-header, .rooms{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #253141;
   padding: 0 20px;
 }
 
+.user a{
+  color: #fafafa;
+  font-weight: 16px;
+  text-decoration: none;
+}
+
+.create-room a {
+  color: deepskyblue;
+  font-weight: 10px;
+  border: lightblue 1px solid ;
+  padding: 14px;
+  text-decoration: none;
+}
+/* ---------------------------- */
+.rooms {
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  padding: 0 20px;
+  overflow: scroll;
+}
+
+.chat-room {
+  padding: 20px 0 40px;
+}
+.room-name a{
+  color: white;
+  text-decoration: none;
+}
+/* -------------------------------- */
 .chat-main{
   width: calc(100vw - 300px);
   height: 100vh;
