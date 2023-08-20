@@ -3,4 +3,5 @@ class Room < ApplicationRecord
   has_many :users, through: :room_users
   # テーブル名は、room_user
   # でも、has-manyの後に来るからroom_users
+  validates :name, presence: true
 end
